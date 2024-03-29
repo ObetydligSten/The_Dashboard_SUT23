@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="clock">
+            <div class="time" id="time"></div>
+            <div class="date" id="date"></div>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="content">
+            <h1 id="title" contenteditable="true">Your Dashboard</h1>
+            <div class="boards">
+                <div class="card">
+                    <h3 class="miniheader">Snabblänkar</h3>
+                    <div class="card1" id="card1">
+                        <div class="linksContainer" id="linksContainer"></div>
+                        <div class="add" id="add">
+                            <div class="fa fa-plus-circle"></div>
+                            <p>Lägg till länk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="miniheader">Vädret</h3>
+                    <div class="card2" id="card2">
+                        <div class="days" id="today"></div>
+                        <div class="days" id="tomorrow"></div>
+                        <div class="days" id="twodays"></div>
+                        <div class="days" id="threedays"></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="miniheader">Sök Land</h3>
+                    <div class="card3" id="card3">
+                        <input type="text" class="namesearch" id="namesearch" placeholder="Skriv in landets namn...">
+                        <button class="buttonsearch" id="buttonsearch" onclick="searchCountry()">Sök</button>
+                        <div class="country" id="country">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="miniheader">Anteckningar</h3>
+                    <div class="card4" id="card4">
+                        <textarea class="notes" id="notes" rows="20" cols="38"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="random">
+            <div class="fa fa-random"></div>
+            <p>Slumpa ny bakgrund</p>
+        </div>
+    </footer>
+
+    <script src="JavaScript/links.js"></script>
+    <script src="JavaScript/country.js"></script>
+    <script src="JavaScript/notes.js"></script>
+    <script src="JavaScript/weather.js"></script>
+    <script src="JavaScript/titleEdit.js"></script>
+    <script src="JavaScript/clock.js"></script>
+    <script src="JavaScript/randomImg.js"></script>
+</body>
+</html>
